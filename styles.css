@@ -8,10 +8,14 @@ body{
     background-color: brown;
     font-family: Arial, sans-serif;
     font-size: var(--font-medium);
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 header{
     display: flex;
@@ -100,21 +104,22 @@ h1 {
 }
 
 .cart-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: var(--box-shadow);
+    
 }
 .book-details {
     margin-right: 1rem;
 }
 .cart-item img {
-    width: 80px;
-    height: 100px;
+    width: 120px;
+    height: 150px;
     object-fit: cover;
     margin-right: 1rem;
 }
@@ -193,12 +198,12 @@ h1 {
 .books {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
-    justify-content: center;
+    
+
     gap: 20px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .book {
@@ -214,6 +219,7 @@ h1 {
     background-color: white;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
+    
 
 }
 .book:hover{
@@ -226,6 +232,8 @@ h1 {
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .books button {
@@ -242,7 +250,7 @@ h1 {
     color: white;
 }
 .filter-section{
-    grid-area: extra;
+    grid-area: main;
     margin-top: 20px;
     padding: 20px;
     background: white;
@@ -283,27 +291,34 @@ footer{
 
 @media (max-width:768px) {
     body{
-        overflow-x: hidden;
         grid-template-areas:
         "header"
         "sidebar"
         "main"
         "footer";
-        grid-template-columns: 1fr;
+        overflow-x: hidden;
         gap: 10px;
+        margin: 0;
+        width: 100%;
+    }
+    .books {
+        grid-template-columns: 1fr;
+        width: 100%;
     }
     header{
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
     nav ul{
         flex-direction: column;
         width: 100%;
+        text-align: center;
         padding: 0;
     }
     .sidebar{
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         order: 3;
         gap: 10px;
@@ -311,11 +326,15 @@ footer{
         border-radius: 0.5rem;
         flex-wrap: wrap;
         width: 100%;
+        padding: 10px;
+        text-align: center;
     }
     .Categories{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
         gap: 10px;
         width: 100%;
     }
@@ -328,16 +347,17 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         padding: 1rem;
+        width: 100%;
     }
     .book{
-        width: 95%;
+        width: 90%;
+        max-width: 350px;
         text-align: center;
         background: white;
         padding: 15px;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .book:hover{
         transform: translateY(-3px);
@@ -345,18 +365,22 @@ footer{
     }
     .cart{
         text-align: center;
+        width: 100%;
     }
     .cart-item{
         flex-direction: column;
         align-items: center;
     }
     .cart-grid{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
     }
     .cart-item img {
-        width: 80%;
-        max-width: 150px;
+        width: 100%;
+        max-width: 250px;
         height: auto;
         margin-bottom: 10px;
     }
