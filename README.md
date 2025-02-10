@@ -1,4 +1,4 @@
 A basic book webshop I worked on it in the university/ Frontend course.
 I have used only HTML and CSS.
-To open the website in mobile mode click on this link:
+To open the website in your mobile:
 https://webshopmustafa.static.domains/ 
