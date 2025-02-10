@@ -1,21 +1,25 @@
-body{
+.container{
     display: grid;
     grid-template-areas:
     "header header header"
     "sidebar main extra"
     "footer footer footer";
     gap: 1rem;
-    background-color: brown;
+    background-color: red;
     font-family: Arial, sans-serif;
     font-size: var(--font-medium);
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
+html, .container {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     grid-area: header;
     padding: 10px;
@@ -25,7 +29,9 @@ header{
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
-
+}
+header h1{
+    text-align: left;
 }
 #logo{
     width: 100px;
@@ -36,6 +42,8 @@ header{
 
 nav ul {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -43,7 +51,9 @@ nav ul {
 
 }
 nav li{
-    margin-left: 20px;
+    gap: 10px;
+    margin: 10px;
+    
 }
 
 nav a {
@@ -52,6 +62,7 @@ nav a {
     
 }
 nav a:hover{
+    text-decoration: underline;
     color: rgb(176, 244, 6);
 }
 
@@ -77,6 +88,7 @@ h1 {
 .Categories{
     display: flex;
     flex-direction: column;
+    text-align: center;
     color: white;
     font-size: 16px;
     padding: 1rem;
@@ -100,21 +112,22 @@ h1 {
 }
 
 .cart-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: var(--box-shadow);
+    
 }
 .book-details {
     margin-right: 1rem;
 }
 .cart-item img {
-    width: 80px;
-    height: 100px;
+    width: 120px;
+    height: 150px;
     object-fit: cover;
     margin-right: 1rem;
 }
@@ -127,9 +140,13 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
 }
 
 .remove-btn:hover{
+    text-decoration: underline;
     background: #a34040;
 }
 
@@ -161,7 +178,7 @@ h1 {
 }
 .book-price{
     color: black;
-    font-size: 14px;
+    font-size: 16px;
 }
 .quantity{
     width: 40px;
@@ -169,7 +186,7 @@ h1 {
     text-align: center;
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 :root {
@@ -181,7 +198,6 @@ h1 {
 }
 
 .main{
-    grid-area: main;
     border-radius: 0.5rem;
     gap: 5rem;
     background: lightgray;
@@ -193,12 +209,12 @@ h1 {
 .books {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
-    justify-content: center;
+    
+
     gap: 20px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .book {
@@ -214,6 +230,7 @@ h1 {
     background-color: white;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
+    
 
 }
 .book:hover{
@@ -226,6 +243,8 @@ h1 {
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .books button {
@@ -238,11 +257,12 @@ h1 {
     cursor: pointer;
 }
 .books button:hover{
+    text-decoration: underline;
     background: rgb(75, 225, 75);
     color: white;
 }
 .filter-section{
-    grid-area: extra;
+    grid-area: main;
     margin-top: 20px;
     padding: 20px;
     background: white;
@@ -264,7 +284,8 @@ h1 {
     border-radius: 8px;
     text-align: center;
 }
-.book-card > h2{
+.book-card h2{
+    display: flex;
     color: white;
 }
 
@@ -281,41 +302,62 @@ footer{
     
 }
 
-@media (max-width:768px) {
-    body{
-        overflow-x: hidden;
+@media (max-width:1024px) {
+    .container{
         grid-template-areas:
         "header"
         "sidebar"
         "main"
         "footer";
-        grid-template-columns: 1fr;
+        overflow-x: hidden;
         gap: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .books {
+        grid-template-columns: 1fr;
+        width: 100%;
     }
     header{
         flex-direction: column;
         text-align: center;
+        width: 100%;
+    }
+    header h1{
+        text-align: center;
+    }
+    h2{
+        padding: 20px;
+    }
+    #logo{
+        justify-content: center;
     }
     nav ul{
         flex-direction: column;
         width: 100%;
+        text-align: center;
         padding: 0;
     }
+    
     .sidebar{
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         order: 3;
         gap: 10px;
         background: linear-gradient(to left, red, orange);
         border-radius: 0.5rem;
         flex-wrap: wrap;
-        width: 100%;
+        width: auto;
+        padding: 10px;
+        text-align: center;
     }
     .Categories{
         display: flex;
+        flex-wrap: wrap;
+        text-align: center;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         gap: 10px;
         width: 100%;
     }
@@ -328,16 +370,17 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        padding: 1rem;
+        padding: 10px;
+        width: 100%;
     }
     .book{
-        width: 95%;
+        width: 100%;
+        max-width: 350px;
         text-align: center;
         background: white;
-        padding: 15px;
+        padding: 0px;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .book:hover{
         transform: translateY(-3px);
@@ -345,20 +388,24 @@ footer{
     }
     .cart{
         text-align: center;
+        margin: 0 auto;
     }
     .cart-item{
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
     }
     .cart-grid{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
     .cart-item img {
-        width: 80%;
-        max-width: 150px;
+        width: 100%;
+        max-width: 250px;
         height: auto;
-        margin-bottom: 10px;
     }
     .remove-btn {
         width: 100%;
