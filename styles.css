@@ -6,20 +6,21 @@
     "footer footer footer";
     gap: 1rem;
     background-color: red;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: var(--font-medium);
     margin: 0;
     padding: 0;
-}
-<<<<<<< HEAD
-html, .container {
-=======
-html, body {
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
+    font-weight: bold;
     overflow-x: hidden;
     width: 100%;
-}
 
+}
+/* * {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+} */
+
+/*HEADER*/
 
 header{
     display: flex;
@@ -33,7 +34,21 @@ header{
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
+    
 }
+header nav{
+    /*position: fixed;*/
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+}
+
+
+/* h1 h2 h3 {
+    font-family: 'Bush Script MT';
+    font: bold;
+    font-style: 'cursive';
+} */
 header h1{
     text-align: left;
 }
@@ -44,6 +59,7 @@ header h1{
     padding: 10px;
 }
 
+/*NAVIGATION*/
 nav ul {
     display: flex;
     flex-direction: column;
@@ -52,7 +68,7 @@ nav ul {
     margin: 0;
     padding: 0;
     
-
+    
 }
 nav li{
     gap: 10px;
@@ -63,7 +79,6 @@ nav li{
 nav a {
     text-decoration: none;
     color: white;
-    
 }
 nav a:hover{
     text-decoration: underline;
@@ -74,31 +89,111 @@ h1 {
     flex-grow: 1;
     text-align: center;
     font-size: 30px;
+    
 }
-
+/*aside*/
 .sidebar{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: White;
     grid-area: sidebar;
+    position: relative;
     background: linear-gradient(to left, red, orange);
     padding: 1rem;
     border-radius: 0.5rem;
     width: 280px;
 }
 
+/*BOOK-Part*/
 
-.Categories{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    padding: 1rem;
-    font: bold;
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
     
 }
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    width: 250px;
+    background: white;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+.book:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+
+}
+.heighlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+.books img{
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*BOOK-BUTTONS*/
+
+button{
+    background: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50%;
+
+}
+.books button:hover{
+    text-decoration: underline;
+    background:gray;
+    color: white;
+    box-shadow: 3px 3px 3px 3px red;
+}
+.filter-section{
+    grid-area: main;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.filter-category h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+.books-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.book-grid .book{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.book-card h2{
+    display: flex;
+    color: white;
+}
+
+/*CART*/
 
 .cart{
     grid-area: main;
@@ -108,6 +203,11 @@ h1 {
     border-radius: 8px;
     margin: 15px;
     box-shadow: var(--box-shadow);
+    font-weight: bold;
+
+}
+.cart:hover{
+    box-shadow: 5px 5px 5px 5px rgb(186, 5, 5);
 }
 .cart-grid {
     display: grid;
@@ -123,12 +223,9 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
-    box-shadow: var(--box-shadow);
     
 }
-.book-details {
-    margin-right: 1rem;
-}
+
 .cart-item img {
     width: 120px;
     height: 150px;
@@ -136,33 +233,66 @@ h1 {
     margin-right: 1rem;
 }
 
+/*REMOVE-BUTTON*/
+
 .remove-btn {
-    background-color: red;
     color: white;
     padding: 10px 15px;
     font-size: 14px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5%;
     cursor: pointer;
     width: 30%;
     height: auto;
     font-weight: bold;
 }
+.remove-btn-1{
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
 
-.remove-btn:hover{
-    text-decoration: underline;
-    background: #a34040;
+}
+.remove-btn-2{
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
+
 }
 
+
+
+.remove-btn-1:hover{
+    text-decoration: underline;
+    background: #a34040;
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+}
+.remove-btn-2:hover{
+    text-decoration: underline;
+    background: #a34040;
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+}
 .total-price {
     background-color: gray; 
     color: white;
     text-align: right;
     border: none;
     border-radius: 3px;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
 }
 
 .book-cover{
@@ -193,14 +323,6 @@ h1 {
     font-size: 16px;
 }
 
-:root {
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-
-}
-
 .main{
     border-radius: 0.5rem;
     gap: 5rem;
@@ -208,89 +330,6 @@ h1 {
     color: white;
     padding: 2%;
     text-align: center;
-}
-
-.books {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    
-}
-
-.book {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    border: 1px solid black;
-    padding: 15px;
-    width: 250px;
-    background: white;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
-    
-
-}
-.book:hover{
-    transform: scale(1.05);
-    box-shadow: var(--hover-shadow);
-
-}
-.books img{
-    max-height: 200px;
-    object-fit: contain;
-    margin-bottom: 10px;
-    border-radius: 0.5rem;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.books button {
-    background: darkgreen;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    font-size: 16px;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-.books button:hover{
-    text-decoration: underline;
-    background: rgb(75, 225, 75);
-    color: white;
-}
-.filter-section{
-    grid-area: main;
-    margin-top: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-}
-.filter-category h2{
-    text-align: center;
-    color: black;
-    margin-bottom: 15px;
-}
-.books-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.book-grid .book{
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-}
-.book-card h2{
-    display: flex;
-    color: white;
 }
 
 footer{
@@ -302,17 +341,18 @@ footer{
     color: white;
     padding: 10px;
     background-color: brown;
+    color: rgba(244, 245, 238, 0.61);
     width: 100%;
     
 }
+input{
+    background-color: yellow
+    
+}
 
-<<<<<<< HEAD
 @media (max-width:1024px) {
     .container{
-=======
-@media (max-width:768px) {
-    body{
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
+        display: grid;
         grid-template-areas:
         "header"
         "sidebar"
@@ -320,22 +360,20 @@ footer{
         "footer";
         overflow-x: hidden;
         gap: 10px;
-<<<<<<< HEAD
         margin: 0 auto;
-=======
-        margin: 0;
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
         width: 100%;
     }
+        /* Adjust book layout for smaller screens */
+
     .books {
         grid-template-columns: 1fr;
         width: 100%;
     }
+    /* Adjust header layout */
     header{
         flex-direction: column;
         text-align: center;
         width: 100%;
-<<<<<<< HEAD
     }
     header h1{
         text-align: center;
@@ -345,8 +383,10 @@ footer{
     }
     #logo{
         justify-content: center;
-=======
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
+    }
+    nav{
+        grid-area: nav;
+        position: relative;
     }
     nav ul{
         flex-direction: column;
@@ -364,11 +404,7 @@ footer{
         background: linear-gradient(to left, red, orange);
         border-radius: 0.5rem;
         flex-wrap: wrap;
-<<<<<<< HEAD
         width: auto;
-=======
-        width: 100%;
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
         padding: 10px;
         text-align: center;
     }
@@ -376,11 +412,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-<<<<<<< HEAD
         flex-direction: row;
-=======
-        flex-direction: column;
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
         justify-content: center;
         gap: 10px;
         width: 100%;
@@ -394,19 +426,11 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-<<<<<<< HEAD
         padding: 10px;
         width: 100%;
     }
     .book{
         width: 100%;
-=======
-        padding: 1rem;
-        width: 100%;
-    }
-    .book{
-        width: 90%;
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
         max-width: 350px;
         text-align: center;
         background: white;
@@ -418,38 +442,36 @@ footer{
         transform: translateY(-3px);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
+
+    /* Adjust shopping cart layout */
     .cart{
         text-align: center;
-<<<<<<< HEAD
         margin: 0 auto;
-=======
-        width: 100%;
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
     }
     .cart-item{
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
     }
     .cart-grid{
         display: flex;
         flex-direction: column;
         align-items: center;
-<<<<<<< HEAD
-=======
-        width: 100%;
->>>>>>> c7f0ffc228327d83c0f51839de273e924f20f6a3
 
     }
+
+    /* Responsive cart item images */
     .cart-item img {
         width: 100%;
         max-width: 250px;
         height: auto;
     }
     .remove-btn {
-        width: 100%;
+        width: auto;
         max-width: 200px;
+
+
     }
     footer {
         text-align: center;
