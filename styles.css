@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 body {
     padding-top: 10px; /* change the top of the page white space up*/
     margin: 0;
     overflow-x: hidden;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 .container{
     display: grid;
     grid-template-areas:
@@ -11,6 +20,10 @@ body {
     "footer footer footer";
     gap: 1rem;
     background-color: red;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     font-size: var(--font-medium);
     margin: 10px;
     padding: 10px;
@@ -19,21 +32,56 @@ body {
     padding-top: 10px;
 
 }
+<<<<<<< HEAD
+=======
+=======
+    /* font-family: Arial, sans-serif; */
+    font-size: var(--font-medium);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    overflow-x: hidden;
+    width: 100%;
+
+}
+/* * {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+} */
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 
 /*HEADER*/
 
 header{
     display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     justify-content: space-between;
     align-items: center;
     grid-area: header;
     padding: 0px;
+<<<<<<< HEAD
+=======
+=======
+    justify-content: left;
+    align-items: center;
+    grid-area: header;
+    padding: 10px;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     background-color: brown;
     border-radius: 8px;
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     top: 0;
     left: 0;
     width: 100%;
@@ -43,15 +91,40 @@ header{
 
 }
 header nav{
+<<<<<<< HEAD
+=======
+=======
+    
+}
+header nav{
+    /*position: fixed;*/
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     top: 0;
     right: 0;
     padding: 15px 20px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+/* h1 h2 h3 {
+    font-family: 'Bush Script MT';
+    font: bold;
+    font-style: 'cursive';
+} */
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 header h1{
     text-align: left;
 }
 #logo{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     display: flex;
     position: absolute;
     left: 10%;  /* change to move the logo */
@@ -62,21 +135,52 @@ header h1{
 }
 
 /*The list (Home.. categorise.. cart) in header */
+<<<<<<< HEAD
+=======
+=======
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*NAVIGATION*/
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 nav ul {
     display: flex;
     flex-direction: column;
     text-align: center;
     list-style: none;
     margin: 0;
+<<<<<<< HEAD
     padding: 0px;
+=======
+<<<<<<< HEAD
+    padding: 0px;
+=======
+    padding: 0;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     
     
 }
 nav li{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     display: flex;
     gap: 10px;
     margin: 10px;
 
+<<<<<<< HEAD
+=======
+=======
+    gap: 10px;
+    margin: 10px;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     
 }
 
@@ -90,13 +194,25 @@ nav a:hover{
 }
 
 h1 {
+<<<<<<< HEAD
     display: flex;
     justify-content: center; /* move title to center*/
+=======
+<<<<<<< HEAD
+    display: flex;
+    justify-content: center; /* move title to center*/
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     flex-grow: 1;
     text-align: center;
     font-size: 30px;
     
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 h2{
     color: white; /*Categories font color*/
 }
@@ -118,6 +234,23 @@ h2{
 .Categories{
     display: flex;
     flex-direction: column; /* list under Categorise*/
+<<<<<<< HEAD
+=======
+=======
+/*aside*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: White;
+    grid-area: sidebar;
+    position: relative;
+    background: linear-gradient(to left, red, orange);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 280px;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 }
 
 /*BOOK-Part*/
@@ -128,7 +261,14 @@ h2{
     gap: 20px;
     width: 100%;
     max-width: 1200px;
+<<<<<<< HEAD
     /*padding-left: 250px; only when using position: fixed; asidebae*/
+=======
+<<<<<<< HEAD
+    /*padding-left: 250px; only when using position: fixed; asidebae*/
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     
 }
 
@@ -147,6 +287,10 @@ h2{
     
 }
 .book:hover{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     box-shadow: 0 8px 15px rgba(3, 50, 240, 0.556);
     transform: scale(1.09); /* make it pop */
     transition: 0.1s;
@@ -157,6 +301,19 @@ h2{
     background-color: yellow;
     font-weight: bold;
 }*/
+<<<<<<< HEAD
+=======
+=======
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+
+}
+.heighlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 .books img{
     max-height: 200px;
     object-fit: contain;
@@ -174,6 +331,10 @@ button{
     padding: 10px 15px;
     border: none;
     font-size: 16px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     border-radius: 10%; /* change here to make buttons runda*/
 
 }
@@ -188,6 +349,19 @@ button:hover{
     background:transparent;
     color: black;
     box-shadow: 3px 3px 3px 3px rgb(186, 149, 149);
+<<<<<<< HEAD
+=======
+=======
+    border-radius: 50%;
+
+}
+.books button:hover{
+    text-decoration: underline;
+    background:gray;
+    color: white;
+    box-shadow: 3px 3px 3px 3px red;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 }
 .filter-section{
     grid-area: main;
@@ -195,8 +369,16 @@ button:hover{
     padding: 20px;
     background: white;
     border-radius: 10px;
+<<<<<<< HEAD
     margin-right: 50px;
     /*padding-left: 300px; active only when position:fixed; the sidebar*/
+=======
+<<<<<<< HEAD
+    margin-right: 50px;
+    /*padding-left: 300px; active only when position:fixed; the sidebar*/
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 }
 .filter-category h2{
     text-align: center;
@@ -214,7 +396,16 @@ button:hover{
     border-radius: 8px;
     text-align: center;
 }
+<<<<<<< HEAD
 .book-card h2{ /* title (All Books) in the top*/
+=======
+<<<<<<< HEAD
+.book-card h2{ /* title (All Books) in the top*/
+=======
+.book-card h2{
+    display: flex;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     color: white;
 }
 
@@ -234,7 +425,19 @@ button:hover{
 .cart:hover{
     box-shadow: 5px 5px 5px 5px rgb(186, 5, 5);
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 
 .cart-item{
     display: grid;
@@ -253,17 +456,34 @@ button:hover{
     object-fit: cover;
     margin-right: 1rem;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 .cart-item img:hover{
     box-shadow: 0 8px 15px rgba(242, 5, 5, 0.5);
     transform: scale(1.09); /* make it pop */
     transition: 0.1s;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 
 /*REMOVE-BUTTON*/
 
 .remove-btn {
     color: white;
+<<<<<<< HEAD
     padding: 10px;
+=======
+<<<<<<< HEAD
+    padding: 10px;
+=======
+    padding: 10px 15px;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     font-size: 14px;
     border: none;
     border-radius: 5%;
@@ -275,7 +495,14 @@ button:hover{
 .remove-btn-1{
     background-color: red;
     color: white;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     padding: 10px 15px;
     font-size: 14px;
     border: none;
@@ -287,7 +514,15 @@ button:hover{
 
 }
 .remove-btn-2{
+<<<<<<< HEAD
     background-color: red;
+=======
+<<<<<<< HEAD
+    background-color: red;
+=======
+    background-color: green;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     color: white;
     padding: 10px 15px;
     font-size: 14px;
@@ -300,8 +535,27 @@ button:hover{
 
 }
 
+<<<<<<< HEAD
 .remove-btn-1:hover, .remove-btn-2:hover {
     background-color: rgba(0, 0, 0, 0.1); /* transparent */
+=======
+<<<<<<< HEAD
+.remove-btn-1:hover, .remove-btn-2:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* transparent */
+=======
+
+
+.remove-btn-1:hover{
+    text-decoration: underline;
+    background: #a34040;
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+}
+.remove-btn-2:hover{
+    text-decoration: underline;
+    background: #a34040;
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 }
 .total-price {
     background-color: gray; 
@@ -344,6 +598,10 @@ button:hover{
 .main{
     border-radius: 0.5rem;
     gap: 5rem;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     color: white;
     flex: 1;
     padding: 100px;
@@ -352,6 +610,15 @@ button:hover{
     text-align: center;
     
     
+<<<<<<< HEAD
+=======
+=======
+    background: lightgray;
+    color: white;
+    padding: 2%;
+    text-align: center;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
 }
 
 footer{
@@ -361,14 +628,30 @@ footer{
     text-align: center;
     border-radius: 0.5rem;
     color: white;
+<<<<<<< HEAD
     padding: 30x;
+=======
+<<<<<<< HEAD
+    padding: 30x;
+=======
+    padding: 10px;
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     background-color: brown;
     color: rgba(244, 245, 238, 0.61);
     width: 100%;
     
 }
 input{
+<<<<<<< HEAD
     background-color: ghostwhite;
+=======
+<<<<<<< HEAD
+    background-color: ghostwhite;
+=======
+    background-color: yellow
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
     
 }
 
@@ -418,7 +701,14 @@ input{
     }
     
     .sidebar{
+<<<<<<< HEAD
         grid: sidebar;
+=======
+<<<<<<< HEAD
+        grid: sidebar;
+=======
+>>>>>>> ede0bf4c68ca1d4a76e1bca0d7d0600a3a26f311
+>>>>>>> 110c0a44ef2b83389f81d9776132cd6cb1f7405f
         flex-direction: column;
         justify-content: center;
         align-items: center;
